@@ -1,7 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   background: #383838;
-  color: #d9d9d9;
+  color: #fff;
   margin: 0;
   padding: 0;
 }
@@ -18,7 +18,7 @@ header h1 {
 
 header p {
   font-size: 1.2rem;
-  color: #555;
+  color: #383838;
 }
 
 #projects {
@@ -32,7 +32,7 @@ header p {
 .project {
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgb(0, 119, 255);
   padding: 1rem;
   max-width: 300px;
   text-align: center;
