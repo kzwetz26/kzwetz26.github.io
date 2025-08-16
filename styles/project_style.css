@@ -6,10 +6,13 @@ body {
   padding: 0;
 }
 
+#home h3 {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
 #home a {
     display: inline-block;
-    margin-left: 5px;
-    margin-top: 0px;
     text-decoration: none;
     padding: 0px 10px;
     color:#d9d9d9;
