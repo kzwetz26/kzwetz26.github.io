@@ -8,15 +8,16 @@ body {
 
 #home a {
     display: inline-block;
-    margin: 5px;
+    margin-left: 5px;
+    margin-top: 0px;
     text-decoration: none;
-    padding-left: 5px;
-    padding-top: 5px;
+    padding: 0px 10px;
     color:#d9d9d9;
     border: 2px solid #d9d9d9;
-    transition: background-color 0.2s;
+    transition: background-color 0.2s, color 0.2s;
 }
 
 #home a:hover {
     background-color: #007acc;
+
 }
