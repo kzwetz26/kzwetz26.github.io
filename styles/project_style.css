@@ -1,0 +1,16 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #383838;
+  color: #d9d9d9;
+  margin: 0;
+  padding: 0;
+}
+
+header h3 {
+    margin: 0.5rem;
+}
+
+header h3 a {
+    text-decoration: none;
+    border: 2px solid #d9d9d9;
+}
