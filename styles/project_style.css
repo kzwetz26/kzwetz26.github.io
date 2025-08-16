@@ -8,9 +8,15 @@ body {
 
 #home a {
     display: inline-block;
-    margin: 16px;
+    margin: 5px;
     text-decoration: none;
     padding: 0px 10px;
     color:#d9d9d9;
     border: 2px solid #d9d9d9;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#home a:hover {
+    background-color: #007acc;
+
 }
