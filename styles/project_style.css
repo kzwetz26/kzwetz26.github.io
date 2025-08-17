@@ -101,6 +101,9 @@ header a:hover {
 #info {
   max-width: 900px;
   margin: 0 auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  
   line-height: 1.6;
   font-size: 18px;
 }
