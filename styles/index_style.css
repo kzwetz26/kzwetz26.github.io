@@ -14,6 +14,7 @@ header, footer {
 header h1 {
   margin: 0;
   font-size: 2.5rem;
+  background-color: #292929;
 }
 
 header p {

@@ -105,21 +105,30 @@ header a:hover {
   font-size: 18px;
 }
 
-.visual {
-  display: block;
+.centered_content {
   text-align: center;
 }
 
-.visual img {
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  max-width: 500px;
+.visual {
+  display: inline-block;
+  margin: auto;
 }
 
-.visual p {
-  padding: 0;
+.visual img {
+  display: block;
+  max-width: 800px;
+  width: 100%;
+  margin: 0;
+}
+
+.visual figcaption {
+  width: 100%;
   text-align: left;
-  max-width: 500px;
+  margin: 0;
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: #000000;
+  font-size: 12px;
 }
 
 footer {
