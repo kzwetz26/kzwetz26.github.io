@@ -94,6 +94,10 @@ header a:hover {
   transition: transform 0.3s;
 }
 
+.image:hover {
+  cursor: pointer;
+}
+
 .image:hover .caption {
   transform: translateY(0);
 }
@@ -106,21 +110,24 @@ header a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.7);
   justify-content: center;
 }
 
 .lightbox img {
-  max-width: 90%;
-  max-height: 90%;
+  margin-top: 50px;
+  max-width: 80%;
+  max-height: 80%;
   border-radius: 5px;
 }
 
 .lightbox .close {
   position: absolute;
   top: 20px;
-  right: 20px;
-  color: #d9d9d9
+  right: 40px;
+  color: #d9d9d9;
+  font-size: 40px;
+  cursor: pointer;
 }
 
 #info {

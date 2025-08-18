@@ -14,3 +14,9 @@ document.querySelectorAll(".image").forEach(item => {
 close.addEventListener("click", () => {
     lightbox.style.display = "none";
 });
+
+lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+        lightbox.style.display = "none";
+    }
+})
