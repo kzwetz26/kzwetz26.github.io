@@ -10,23 +10,6 @@ body h2 {
   text-align: center;
 }
 
-#home h3 {
-  margin-left: 10px;
-}
-
-#home a {
-  display: inline-block;
-  text-decoration: none;
-  padding: 0px 10px;
-  color:#d9d9d9;
-  border: 2px solid #d9d9d9;
-  transition: background-color 0.2s, color 0.2s;
-}
-
-#home a:hover {
-  background-color: #007acc;
-}
-
 header {
   text-align: center;
   padding-top: 2px;
@@ -115,10 +98,40 @@ header a:hover {
 }
 
 .lightbox img {
-  margin-top: 50px;
-  max-width: 80%;
-  max-height: 80%;
+  margin-top: 20px;
+  max-width: 95%;
+  max-height: 90%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
   border-radius: 5px;
+}
+
+/* Navigation arrows inside lightbox */
+.lightbox .nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  font-size: 36px;
+  background: rgba(0,0,0,0.3);
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  cursor: pointer;
+}
+.lightbox .nav-arrow.left { left: 16px; }
+.lightbox .nav-arrow.right { right: 16px; }
+
+@media (max-width: 600px) {
+  .lightbox img { margin-top: 10px; max-width: 100%; max-height: 85%; }
+  .lightbox .nav-arrow { width:44px; height:44px; font-size:28px; }
 }
 
 .lightbox .close {
@@ -140,6 +153,79 @@ header a:hover {
   font-size: 18px;
 }
 
+/* Apply consistent page container for project pages (exclude header so banner spans full width) */
+section, footer { max-width: 1100px; margin: 0 auto; padding: 0 1rem; box-sizing: border-box; }
+
+#home { position: fixed; top: 12px; left: 12px; z-index: 1200; }
+#home h3 {
+  margin-left: 10px;
+}
+
+#home a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0px 10px;
+  color:#d9d9d9;
+  border: 2px solid #d9d9d9;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+#home a:hover {
+  background-color: #007acc;
+}
+
+.project {
+  background: #d9d9d9;
+  color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  padding: 1rem;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.project img { max-width: 100%; border-radius: 5px; display: block; margin: 0 auto; }
+.project:hover { transform: translateY(-6px); box-shadow: 0 8px 22px rgba(0,0,0,0.35); }
+.project a { display: inline-block; margin-top: 0.5rem; text-decoration: none; color: #007acc; }
+.project a:hover { text-decoration: underline; }
+
+/* Slightly smaller gallery images for better spacing */
+.image { max-width: 480px; }
+
+/* Header/banner improvements */
+header { background: linear-gradient(180deg,#2b2b2b,#252525); padding: 1.25rem 1rem; border-radius: 8px; margin-top: 1rem; }
+header h1 { margin: 0; font-size: 1.9rem; }
+header h4 { margin: 0.5rem 0 0; padding: 0.5rem; background: rgba(0,0,0,0.25); border-radius: 6px; }
+
+/* Section headings */
+#section_heading h2 { margin-top: 1.5rem; margin-bottom: 0.6rem; padding-bottom: 0.4rem; border-bottom: 1px solid rgba(217,217,217,0.06); }
+
+/* Page container spacing for improved readability */
+section, footer { max-width: 1100px; margin: 0 auto; padding: 0 1rem; box-sizing: border-box; }
+
+/* Projects layout: original flexbox centered cards */
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.project {
+  background: #d9d9d9;
+  color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
 .centered_content {
   text-align: center;
 }

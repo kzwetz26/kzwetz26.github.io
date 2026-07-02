@@ -6,6 +6,16 @@ body {
   padding: 0;
 }
 
+body { line-height: 1.5; }
+
+/* Global page container for better spacing (exclude header so banner spans full width) */
+main, footer, section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
 body h2 {
   text-align: center;
 }
@@ -21,49 +31,21 @@ header h1 {
   background-color: #292929;
 }
 
+/* Improve homepage header/banner */
+header {
+  background: linear-gradient(180deg,#2b2b2b,#252525);
+  padding: 1.5rem 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+header p { margin: 0.25rem 0; }
+
 header p {
   font-size: 1.2rem;
   color: #d9d9d9;
 }
 
-#projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
-}
 
-.project {
-  background: #d9d9d9;
-  color: #000000;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  padding: 1rem;
-  max-width: 300px;
-  text-align: center;
-  transition: transform 0.2s;
-}
-
-.project:hover {
-  transform: translateY(-5px);
-}
-
-.project img {
-  max-width: 100%;
-  border-radius: 5px;
-}
-
-.project a {
-  display: inline-block;
-  margin-top: 0.5rem;
-  text-decoration: none;
-  color: #007acc;
-}
-
-.project a:hover {
-  text-decoration: underline;
-}
 
 footer a {
   color: #007acc;
@@ -72,4 +54,54 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* Cover / hero styles */
+.hero {
+  text-align: center;
+  padding: 6rem 1rem;
+}
+.hero h2 {
+  font-size: 2.25rem;
+  margin: 0 0 0.5rem 0;
+}
+.hero .tagline {
+  color: #cfcfcf;
+  margin-bottom: 1.5rem;
+}
+.actions { display: flex; gap: 1rem; justify-content: center; }
+.btn {
+  background: #007acc;
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.btn.outline { background: transparent; border: 2px solid #007acc; color: #007acc; }
+
+/* navigation is static via #home link */
+
+/* Original home button styling restored */
+#home h3 {
+  margin-left: 10px;
+}
+
+#home a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0px 10px;
+  color:#d9d9d9;
+  border: 2px solid #d9d9d9;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+#home a:hover {
+  background-color: #007acc;
+}
+
+
+
+@media (max-width:600px) {
+  .hero { padding: 3rem 1rem; }
+  .actions { flex-direction: column; }
 }
