@@ -49,6 +49,7 @@ header a:hover {
   justify-content: center;
   gap: 2rem;
   padding-bottom: 2rem;
+  max-width: 1800px;
 }
 
 .image {
@@ -201,7 +202,7 @@ header h4 { margin: 0.5rem 0 0; padding: 0.5rem; background: rgba(0,0,0,0.25); b
 #section_heading h2 { margin-top: 1.5rem; margin-bottom: 0.6rem; padding-bottom: 0.4rem; border-bottom: 1px solid rgba(217,217,217,0.06); }
 
 /* Page container spacing for improved readability */
-section, footer { max-width: 1100px; margin: 0 auto; padding: 0 1rem; box-sizing: border-box; }
+section, footer { max-width: 1200px; margin: 0 auto; padding: 0 1rem; box-sizing: border-box; }
 
 /* Projects layout: original flexbox centered cards */
 #projects {
